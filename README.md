@@ -60,10 +60,10 @@ Post-earthquake search-and-rescue operations require immediate, wide-area struct
 ```mermaid
 graph TD
     Input["Aerial Drone Image (512×512 / 768×768)"] --> Backbone["EfficientViT-B2 Backbone (Cascaded Linear Attention)"]
-    Backbone --> |Stride 4, 8, 16, 32| FPN["Multi-Scale Feature Pyramid Network (FPN)"]
+    Backbone -->|"Multi-Scale Strides 4, 8, 16, 32"| FPN["Multi-Scale Feature Pyramid Network (FPN)"]
     FPN --> Fusion["Cross-Scale Feature Fusion & Refinement Decoder"]
     Fusion --> Head["3-Class Triage Head (Softmax Logits)"]
-    Head --> Output["Triage Map: [0] Background | [1] Intact (Green) | [2] Damaged (Red)"]
+    Head --> Output["Triage Map: 0 Background | 1 Intact Green | 2 Damaged Red"]
 ```
 
 ---
