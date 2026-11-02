@@ -1,0 +1,35 @@
+# Large Datasets & Archives
+*.zip
+*.tar.gz
+*.7z
+*.rar
+rescuenet.zip
+data/
+temp_rescuenet/
+checkpoints/
+
+# Heavy Weights (Provide release download links in README)
+*.pth
+*.pt
+*.onnx
+*.ptl
+checkpoints/
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+.venv/
+env/
+ENV/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.mp4
+*.avi
